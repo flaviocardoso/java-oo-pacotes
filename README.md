@@ -6,5 +6,4 @@ Trabalhando com pacotes
 <p></p>
 <p>Packages: são diretórios que tem significado especial dentro do código fonte Java, a palavra chave <b>packages</b> deve ser a primeira declaração e servem para organização e agrupar as classes e interfaces.</p>
 
-<p> Boa prática: nomenclatura de pacotes. </p> 
-<p> Nome do site ao contrario.nome do projeto </p>
+<p> Boa prática: nomenclatura de pacotes -> (Nome do site ao contrario).(nome do projeto). Depois do nome do projeto vem a organização de pastas do sistema.</p>
