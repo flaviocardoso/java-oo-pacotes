@@ -1,2 +1,2 @@
-# java-oo-pacotes
+# Java Orientado a Objetos : Pacotes
 Trabalhando com pacotes
