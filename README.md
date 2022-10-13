@@ -50,3 +50,9 @@ Trabalhando com pacotes
 * É um formato padrão do mundo Java para distrubir código compilado. Qualquer biblioteca ou projeto vai usar JAR(s) para distribuir o código.
 * É um arquivo compactado com ZIP.
 
+<p>JAR executavel pela linha de comando. Somente JAR executavel podem ser executado.</p>
+
+```
+java -jar executavel.jar
+```
+
