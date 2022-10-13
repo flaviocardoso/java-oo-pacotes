@@ -16,3 +16,12 @@ Trabalhando com pacotes
 * É possível repetir a declaração <b>import</b> para importações de packages diferentes. O <b>import</b> facilita o uso da classe pois não precisamos do Full Qualified Name.
 * A definição da classe sempre deve vir por último, após package e import.
 
+#### Modificadores: 
+* Temos quatro modificados: private, default, protected e public, que vai do mais restrivo para o menos restritivo.
+* <<package private>> - (ausência do modificador), também chamada de package private ou default, o membro fica vísivel na classe e no package, mas é invísivel fora do pacote (nem para os filhos).
+* protected - funciona igual ao *"<<package private>>" mas adiciona a visibilidade para os filhos (chamado de <b>publico para os filhos</b>). (classe, package e classe filho).
+
+<p>Quando se tira o acesso publico de uma classe transformamos essa classe em <b>package private</b>, ou seja, é só vísivel dentro do pacote em que ela está contida.</p>
+<p>Modificadores podem ser usados na definição da classe, atributo, construtor e método.</p>
+<p></p>
+
