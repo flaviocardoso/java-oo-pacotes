@@ -46,5 +46,7 @@ Trabalhando com pacotes
 * @serial
 * @deprecated
 
-
+### JAR (Java ARchive)
+* É um formato padrão do mundo Java para distrubir código compilado. Qualquer biblioteca ou projeto vai usar JAR(s) para distribuir o código.
+* É um arquivo compactado com ZIP.
 
