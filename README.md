@@ -58,6 +58,11 @@ java -jar executavel.jar
 
 <p>Na nossa biblioteca temos a pasta META-INFO que tem um arquivo que tem nossa configuração MANIFEST.MF. Podemos ver que tanto a biblioteca quanto o executável tem esse manifest, que no caso do executável direciona qual o main que vai executar.</p>
   
+```
+Manifest-Version: 1.0
+Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
+```
+  
 ### Maven
 
 <p>A necessidade de organizar, centralizar e versionar os JARs dessa biblioteca e gerenciar as dependências entre elas, foram criadas ferramentas entre elas específicas e no mundo Java se destacou o Maven. O Maven organiza os JARs (código compilado, código fonte e documentação) em repositório central que é publico e pode ser pesquisado. => [https://mvnrepository.com/]. O Maven é bem parecido com apt ou rpm.</p>
