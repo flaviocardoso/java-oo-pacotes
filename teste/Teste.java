@@ -1,4 +1,4 @@
-package br.com.teste;
+package teste;
 
 import br.com.flaviocardoso.escola.modelo.*;
 
