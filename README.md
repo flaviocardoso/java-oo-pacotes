@@ -35,6 +35,7 @@ Trabalhando com pacotes
 * O javadoc é uma documentação para desenvolvedores.
 * Apenas os membros públicos são considerados detalhes da implementação e não podem ser utilizados para outras classes.
 <p>Detalhes sobre tags: </p>
+
 * @author - usado na classe ou interface
 * @version - usado na classe ou interface
 * @param - usado no método e construtor
