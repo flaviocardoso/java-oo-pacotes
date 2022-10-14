@@ -134,6 +134,8 @@ Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
   * double[] precos = {2.54, 3.49, 5.67, 4.97, 8.56};
   * No lugar do double pode ser também uma classe que nós criamos para fazer uma referência de objetos.
   
+  <p>Podemos receber valores ao chamar o programa Java na linha de comando com o array String[] do método main. > java classMain [valores com espaços]</p>
+  
 ```
 int[] numeros = new int[3]; // inicializa o array com 0, todos os membros da array. 3 é a quantidade de membros.
 numeros[posicao];
