@@ -90,4 +90,16 @@ Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
  int comprimento = novo.length();
  System.out.println(novo);
  ```
+ 
+ <p>+ Interface CharSequence</p>
+ <p>A classe String recebem uma variável do tipo CharSequence. O tipo CharSequence é uma interface que a própria classe String e StringBuild implementa.</p>
+ <p>+ Classe StringBuilder</p>
+ <p>O StringBuilder é uma classe comum. Ela tem um objeto mutável para usarmos atribuição sem novas referências.</p>
+ 
+ ```
+ StringBuilder builder = new StringBuilder("Teste"); // CharSequence builder 
+ // buider métodos
+ String texto = builder.toString(); // transforma o builder em String - CharSequence texto
+ ```
+ 
 
