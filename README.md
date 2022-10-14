@@ -146,6 +146,12 @@ numeros[posicao];
   int[] refs = {}; // membros separados por vírgula.
   ```
   
+  <p>Desvantagens do array</p>
+  
+  * Não podemos sabemos quais os elementos que pode ter, só a quantidade de elementos.
+  * Uma vez a array criado sempre terá o mesmo tamanho de elementos.
+  * Os arrays realmente tem a sua própria sintaxe, o que dificulta a legibilidade do código.
+  
 ### Cast explícito e implícito - conversão de um tipo para outro.
 ### Cast implítito e explícito de primitivos - conversão de um tipo inferior para um superior. - int n = 3; double v = (double) n;
 ### Cast implíticos e explicito de referências - conversão de um tipo de classe filha para uma classe pai. - Exemplo pode ser Herança ou interface.
