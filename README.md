@@ -106,4 +106,39 @@ Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
  * Qualquer objeto poder ser referenciado pelo tipo Object, tornando ela a forma mais genérica de refernciar um objeto.
  * Não é preciso deixar explícito na declaração de uma classe que ela deve herdar de Object, o compilador automaticamente insere a declaração.
  * Sendo que qualquer classe que pode herar de Object, o classe que herdou possui métodos da classe Object.
+ * toString() - Devolve informações sobre o estado do objeto. Se pode sobrescrever o método nas classes.
+  
+  ```
+  @Override
+  piblic String toString() {
+    // implementação
+  }
+  ```
+ 
+<p>Depois que implementa o método a classe se comporta como com uma String de formato diferente do padrão do Object e mostra a mensagem que criamos, e podemos criar toString nas classes filhas também, deixando as classe mais reutilizáveis.</p>
 
+  
+  <p>Arrays: </p>
+  * A primeira posição em Java é zero.
+  * Serve para guardar elementos (valores primitivos ou referências)
+  * Usam colchetes ([]) sintaticamente.
+  * Tem um tamanho fixo.
+  * É um objeto.
+  * Sempre inicializa com valores padrão. // int - 0, String - null, Object - null
+  * Posição inválida tem exceção ArrayIndexOutBoundException.
+  * Possue atributo length para saber o comprimento.
+  * Forma literal para criar uma Array com uso de chaves ({}).
+  * É uma estrutura de dados.
+  * double[] precos = new double[5] ou double precos[] = new double[5];
+  * double[] precos = {2.54, 3.49, 5.67, 4.97, 8.56};
+  * No lugar do double pode ser também uma classe que nós criamos para fazer uma referência de objetos.
+  
+```
+int[] numeros = new int[3]; // inicializa o array com 0, todos os membros da array. 3 é a quantidade de membros.
+numeros[posicao];
+```
+  <p>Arrays: Forma literal</p>
+  
+  ```
+  int[] refs = {}; // membros separados por vírgula.
+  ```
