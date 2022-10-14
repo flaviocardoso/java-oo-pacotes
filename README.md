@@ -119,6 +119,7 @@ Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
 
   
   <p>Arrays: </p>
+  
   * A primeira posição em Java é zero.
   * Serve para guardar elementos (valores primitivos ou referências)
   * Usam colchetes ([]) sintaticamente.
