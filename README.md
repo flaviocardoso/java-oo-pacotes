@@ -118,7 +118,7 @@ Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
 <p>Depois que implementa o método a classe se comporta como com uma String de formato diferente do padrão do Object e mostra a mensagem que criamos, e podemos criar toString nas classes filhas também, deixando as classe mais reutilizáveis.</p>
 
   
-  <p>Arrays: </p>
+#### Arrays
   
   * A primeira posição em Java é zero.
   * Serve para guardar elementos (valores primitivos ou referências)
@@ -140,7 +140,7 @@ Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
 int[] numeros = new int[3]; // inicializa o array com 0, todos os membros da array. 3 é a quantidade de membros.
 numeros[posicao];
 ```
-  <p>Arrays: Forma literal</p>
+#### Arrays: Forma literal
   
   ```
   int[] refs = {}; // membros separados por vírgula.
@@ -152,7 +152,7 @@ numeros[posicao];
   * Uma vez a array criado sempre terá o mesmo tamanho de elementos.
   * Os arrays realmente tem a sua própria sintaxe, o que dificulta a legibilidade do código.
   
-<p>ArrayList</p>
+#### ArrayList
 
 * Guarda referências.
 * É do pacote "java.util".
