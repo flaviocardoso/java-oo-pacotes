@@ -152,6 +152,12 @@ numeros[posicao];
   * Uma vez a array criado sempre terá o mesmo tamanho de elementos.
   * Os arrays realmente tem a sua própria sintaxe, o que dificulta a legibilidade do código.
   
+<p>ArrayList</p>
+
+* Guarda referências.
+* É do pacote "java.util".
+* Usa internamente um array.
+  
 ### Cast explícito e implícito - conversão de um tipo para outro.
 ### Cast implítito e explícito de primitivos - conversão de um tipo inferior para um superior. - int n = 3; double v = (double) n;
 ### Cast implíticos e explicito de referências - conversão de um tipo de classe filha para uma classe pai. - Exemplo pode ser Herança ou interface.
