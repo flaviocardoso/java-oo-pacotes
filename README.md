@@ -66,4 +66,28 @@ Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
 ### Maven
 
 <p>A necessidade de organizar, centralizar e versionar os JARs dessa biblioteca e gerenciar as dependências entre elas, foram criadas ferramentas entre elas específicas e no mundo Java se destacou o Maven. O Maven organiza os JARs (código compilado, código fonte e documentação) em repositório central que é publico e pode ser pesquisado. => [https://mvnrepository.com/]. O Maven é bem parecido com apt ou rpm.</p>
+  
+### java.lang
+  
+* Possui classes essencias para qualquer programa. As classes String e System são apenas dois exemplos de vários outros.
+* Não precisa de import, é automaticamente importado, mas nada impede colocar o import explicitamente import java.lang.*. 
+* Outras classes como Exception, RuntimeException, NullPointer e AritmeticException. Todas essas classes vem do pacote java.lang.
+  
+  <p>Classe String</p>
+  * Os objetos da classe String são imútaveis. Isso significa que uma vez criado, não pode ser alterado, por isso qualquer alteração criado, não pode ser alterado, por isso qualquer alteração cria uma novo objeto String. Ex.: String nome = "Flavio"; String nomeAlterado = nome.replace('F', 'f');. O replace não altera a String original e sim devolve uma nova String. Para contemplar a alteração devemos pegar o resultado do método replace. Tem outros métodos do String: toUpperCase, toLowerCase, indexOf, charAt, length, isEmpty, contains, substring, trim.
+  * Já é definida pelo java.lang e não precisa ser importado.
+  * Há uma diferença entre criação com new e a criação com aspas duplas: Usar aspas duplas é boa prática pois a JVM pode executar várias otimizações por baixo dos panos.
+  
+ ```
+ String nome = "Flavio"; // object literal
+ String outro = new String("Alura"); // má prática, sempre prefira a sintaxe literal
+  
+ String novo = nome.replace("F", "f");
+ novo = novo.toLowerCase();
+ int pos = novo.indexOf("vi");
+ char o = novo.charAt(5);
+ String sub = novo.substring(3);
+ int comprimento = novo.length();
+ System.out.println(novo);
+ ```
 
