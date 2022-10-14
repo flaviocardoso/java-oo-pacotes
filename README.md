@@ -152,11 +152,33 @@ numeros[posicao];
   * Uma vez a array criado sempre terá o mesmo tamanho de elementos.
   * Os arrays realmente tem a sua própria sintaxe, o que dificulta a legibilidade do código.
   
-#### ArrayList
+#### ArrayList - java.util.ArrayList (.Precisa ser importado )
 
 * Guarda referências.
 * É do pacote "java.util".
 * Usa internamente um array.
+* Adiona elemento no ultimo da lista.
+* Usa métodos size, get, remove, etc.
+* Generics parametrizam classes e se definir o tipo dos elementos. ArrayList<Class> = new ArrayList<Class>()
+  
+  <p>ArrayList é um array dinâmico, ou seja, por debaixo dos panos é usado um array, mas sem se preocupar com os detalhes e limitações.</p>
+  <p>A ArrayList tem construtor sobrecarregado que pode receber um tamanho inicial mas continua dinâmica.</p>
+  
+  ```
+  ArrayList lista = new ArrayList(26);
+  ```
+  
+  <p>Lista a partir de outra</p>
+  
+  ```
+  ArrayList lista = new ArrayList(26);
+  lista.add("banana");
+  lista.add("maca");
+  Array outraLista = new ArrayList(lista);
+  ```
+  
+  
+  ```
   
 ### Cast explícito e implícito - conversão de um tipo para outro.
 ### Cast implítito e explícito de primitivos - conversão de um tipo inferior para um superior. - int n = 3; double v = (double) n;
