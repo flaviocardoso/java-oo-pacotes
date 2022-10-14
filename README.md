@@ -102,4 +102,8 @@ Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
  String texto = builder.toString(); // transforma o builder em String - CharSequence texto
  ```
  
+ ### java.lang.Object
+ * Qualquer objeto poder ser referenciado pelo tipo Object, tornando ela a forma mais genérica de refernciar um objeto.
+ * Não é preciso deixar explícito na declaração de uma classe que ela deve herdar de Object, o compilador automaticamente insere a declaração.
+ * Sendo que qualquer classe que pode herar de Object, o classe que herdou possui métodos da classe Object.
 
