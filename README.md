@@ -119,9 +119,9 @@ Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
 
 ### java.util - Precisa ser importada
   
-  * ArrayList, List, LinkedList
+  * Arrays, ArrayList, LinkedList, List, Vector, Collection, Set, HashSet
   
-#### Arrays
+#### Arrays - java.util.Arrays
   
   * A primeira posição em Java é zero.
   * Serve para guardar elementos (valores primitivos ou referências)
@@ -143,19 +143,20 @@ Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
 int[] numeros = new int[3]; // inicializa o array com 0, todos os membros da array. 3 é a quantidade de membros.
 numeros[posicao];
 ```
-#### Arrays: Forma literal
+  <p></p>
+  <p>Arrays: Forma literal</p>
   
   ```
   int[] refs = {}; // membros separados por vírgula.
   ```
   
-  <p>Desvantagens do array</p>
+  <p>Desvantagens do Array:</p>
   
   * Não podemos sabemos quais os elementos que pode ter, só a quantidade de elementos.
   * Uma vez a array criado sempre terá o mesmo tamanho de elementos.
   * Os arrays realmente tem a sua própria sintaxe, o que dificulta a legibilidade do código.
   
-#### ArrayList - java.util.ArrayList (.Precisa ser importado )
+#### ArrayList - java.util.ArrayList (.Precisa ser importado ) -> List -> Collection
 
 * Guarda referências.
 * É do pacote "java.util".
@@ -181,7 +182,7 @@ numeros[posicao];
   ```
   
   
-#### List - java.util.List
+#### List - java.util.List -> java.util.Collection
   
  * É uma interface. Quem implementa essa interface é ArrayList e LinkedList.
  * Todas a lista tem uma ordem de inserção. Os itens estão na mesma posição que foram inseridos.
@@ -200,8 +201,15 @@ numeros[posicao];
   String[] arrayString = { "texto", "criado", "incremento" };
   List<String> lista = Arrays.asList(arrayString); 
   ```
+ 
+  <p>As listas fazem parte de coleções (java.util.Collection). As listas garantem a ordem de inserção. Todas as listas possuem um índice, ou seja são sequências.</p>
   
-  
+#### Vector - java.util.Vector
+
+<p> - Vector é threadsafe. - Como o ArrayList, o Vector também usa um array por baixo. - O Vector implementa List.</p>
+
+<p> Vector -> List -> Collection </p>
+
   
 ### Cast explícito e implícito - conversão de um tipo para outro.
 ### Cast implítito e explícito de primitivos - conversão de um tipo inferior para um superior. - int n = 3; double v = (double) n;
