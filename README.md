@@ -102,7 +102,7 @@ Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
  String texto = builder.toString(); // transforma o builder em String - CharSequence texto
  ```
  
- ### java.lang.Object
+### java.lang.Object
  * Qualquer objeto poder ser referenciado pelo tipo Object, tornando ela a forma mais genérica de refernciar um objeto.
  * Não é preciso deixar explícito na declaração de uma classe que ela deve herdar de Object, o compilador automaticamente insere a declaração.
  * Sendo que qualquer classe que pode herar de Object, o classe que herdou possui métodos da classe Object.
@@ -117,6 +117,9 @@ Main-Class: br.com.flaviocardoso.escola.testes.TesteAluno
  
 <p>Depois que implementa o método a classe se comporta como com uma String de formato diferente do padrão do Object e mostra a mensagem que criamos, e podemos criar toString nas classes filhas também, deixando as classe mais reutilizáveis.</p>
 
+### java.util - Precisa ser importada
+  
+  * ArrayList, List, LinkedList
   
 #### Arrays
   
@@ -178,7 +181,27 @@ numeros[posicao];
   ```
   
   
+#### List - java.util.List
+  
+ * É uma interface. Quem implementa essa interface é ArrayList e LinkedList.
+ * Todas a lista tem uma ordem de inserção. Os itens estão na mesma posição que foram inseridos.
+ * Todas as listas possuem um índice, no qual são acessados, mesmo possuindo elementos duplicados.
+
+  <p> A LinkedList é uma lista duplamante linkada e a ArrayList representa um array com redimensionamento dinâmico.</p>
+  <p> ArrayList</p>
+  <p> - Acesso fácil e perfomático pelo índice. - Elementos precisam ser copiados quando não há mais capacidade.</p>
+  <p> LinkedList</p>
+  <p> - Inserção e remoção preformática em qualquer posição, também no início. - Acesso mais demorado pelo índice, é preciso pesquisar os elementos. </p>
+  <p></p>
+  <p>Transformando uma Array para List - java.util.Arrays<p>
+  <p>A classe java.util.Arrays possui vários métodos estáticos auxiliares para trabalhar com arrays.</p>
+ 
   ```
+  String[] arrayString = { "texto", "criado", "incremento" };
+  List<String> lista = Arrays.asList(arrayString); 
+  ```
+  
+  
   
 ### Cast explícito e implícito - conversão de um tipo para outro.
 ### Cast implítito e explícito de primitivos - conversão de um tipo inferior para um superior. - int n = 3; double v = (double) n;
