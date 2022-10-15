@@ -210,7 +210,7 @@ numeros[posicao];
 
 <p> Vector -> List -> Collection </p>
   
-  <p> java.util.Set também são colecões, mas não aceitam duplicações. </p>
+  <p> Set, java.util.Set, também são colecões, mas não aceitam duplicações. </p>
 
   
 ### Cast explícito e implícito - conversão de um tipo para outro.
