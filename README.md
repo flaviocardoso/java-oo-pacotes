@@ -209,6 +209,8 @@ numeros[posicao];
 <p> - Vector é threadsafe. - Como o ArrayList, o Vector também usa um array por baixo. - O Vector implementa List.</p>
 
 <p> Vector -> List -> Collection </p>
+  
+  <p> java.util.Set também são colecões, mas não aceitam duplicações. </p>
 
   
 ### Cast explícito e implícito - conversão de um tipo para outro.
