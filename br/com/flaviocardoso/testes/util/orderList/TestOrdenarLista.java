@@ -1,6 +1,7 @@
 package br.com.flaviocardoso.testes.util.orderList;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -14,7 +15,6 @@ public class TestOrdenarLista {
 	public static void main(String[] args) {
 		
 		try {
-			
 			Conta cc1 = new ContaCorrente(13, 66);
 			Cliente cl1 = new Cliente();
 			cl1.setNome("Flavio");
@@ -47,42 +47,37 @@ public class TestOrdenarLista {
 			
 			System.out.println("----Organiza Conta por número----");
 			
-			NumeroContaCompardor comparadorNumero = new NumeroContaCompardor();
-			
-			lista.sort(comparadorNumero);
+			lista.sort(new NumeroContaCompardor());
 			
 			for (Conta c : lista) {
-				System.out.println(c.getNumero());
+				System.out.println(c);
 			}
 			
 			System.out.println("----Organiza Conta por agencia----");
 			
-			AgenciaContaCompardor comparadorAgencia = new AgenciaContaCompardor();
 
-			lista.sort(comparadorAgencia);
+			lista.sort(new AgenciaContaCompardor());
 			
 			for (Conta c : lista) {
-				System.out.println(c.getAgencia());
+				System.out.println(c);
 			}
 			
 			System.out.println("----Organiza Conta por saldo----");
-			
-			SaldoContaCompardor comparadorSaldo = new SaldoContaCompardor();
 
-			lista.sort(comparadorSaldo);
+//			lista.sort(new SaldoContaCompardor());
+//			Collections.sort(lista);
+			lista.sort(null);
 			
 			for (Conta c: lista) {
-				System.out.println(c.getSaldo());
+				System.out.println(c);
 			}
 			
 			System.out.println("---Organiza Conta por titular nome----");
 			
-			TitularContaComparator comparadorTitularNome = new TitularContaComparator();
-			
-			lista.sort(comparadorTitularNome);
+			lista.sort(new TitularContaComparator());
 			
 			for (Conta c: lista) {
-				System.out.println(c.getTitular().getNome());
+				System.out.println(c);
 			}
 			
 			
