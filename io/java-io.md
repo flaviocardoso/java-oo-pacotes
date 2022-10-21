@@ -11,5 +11,5 @@
 
 <p>OutputStream <- FileOutputStream</p>
 <p></p>
-<p>Writer <- OutputStreamReader</p>
+<p>Writer <- OutputStreamWriterr</p>
 <p>Writer <- BufferedWriter</p>
