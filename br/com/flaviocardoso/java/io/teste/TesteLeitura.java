@@ -13,7 +13,7 @@ public class TesteLeitura {
 		
 		try {
 			InputStream fis = new FileInputStream("lorem.txt"); //entrada
-			Reader isr = new InputStreamReader(fis); // leitura
+			Reader isr = new InputStreamReader(fis, "UTF-8"); // leitura
 			// É um Reader, mas com Reader não possui os métodos para a execução do buffer 
 			BufferedReader br = new BufferedReader(isr); // leitura buffer
 			
