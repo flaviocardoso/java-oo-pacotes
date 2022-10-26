@@ -1,5 +1,8 @@
 package br.com.flaviocardoso.gerenciadorDeCursos.testes;
 
+import java.util.Iterator;
+import java.util.Set;
+
 import br.com.flaviocardoso.gerenciadorDeCursos.Aluno;
 import br.com.flaviocardoso.gerenciadorDeCursos.Aula;
 import br.com.flaviocardoso.gerenciadorDeCursos.Curso;
@@ -22,6 +25,16 @@ public class TestaCursoComAluno {
 			.matricular(a2)
 			.matricular(a3);
 		
+		System.out.println("-- listar por iterador alunos --");
+		Set<Aluno> alunos = curso.getAlunos();
+		Iterator<Aluno> iterador = alunos.iterator();
+		
+		while(iterador.hasNext()) {
+			System.out.println(iterador.next());
+		}
+		System.out.println();
+		
+		System.out.println("-- lista alunos --");
 		curso.getAlunos().forEach(a -> System.out.println(a));
 		System.out.println();
 		
